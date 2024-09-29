@@ -43,6 +43,17 @@ body{
 .cabecalho .title{
     font-family: var(--fonte-quaternaria);
     color: var(--cor-fonte-terciaria);
+    font-size: 600;
+}
+
+.title{
+    color: var(--cor-fonte-quaternaria);
+    font-size: 700;
+}
+
+.subtitle{
+    font-family: var(--fonte-quaternaria);
+
 }
 
 .name{
@@ -70,4 +81,24 @@ body{
     --bs-btn-disabled-border-color: var(--cor-primaria);
     font-weight: 600;
 
+}
+
+.bg-img{
+    background-image: linear-gradient(to right, transparent 00%, #fff 100%), url(./assets/images/diversao-em-familia-e-convivencia-aventuras-ao-ar-livre-e-momentos-aconchegantes_984027-255272.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#neuro{
+    color: var(--cor-fonte-secundaria);
+}
+
+#sobreMim{
+    background-image: linear-gradient(to left, transparent 0%, #fff 100%), url(./assets/images/240_F_893849490_LMB3XQKMD8F6DO8KXLqWDeTzfgeYktHN.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
