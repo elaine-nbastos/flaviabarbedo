@@ -20,10 +20,11 @@
     --cor-secundaria: #ffddd2;
     --cor-terciaria: #83c5be;
     --cor-quaternaria: #e29578;
+    --cor-quintenaria: #b9c7ca;
 
-    --cor-fonte-primaria: #006d77;
-    --cor-fonte-secundaria: #ffddd2;
-    --cor-fonte-terciaria: #83c5be;
+    --cor-fonte-primaria: #fff;
+    --cor-fonte-secundaria: #000;
+    --cor-fonte-terciaria: #006d77;
     --cor-fonte-quaternaria: #e29578;
 
 }
@@ -31,7 +32,7 @@
 body{
 
     font-family: var(--fonte-primaria) !important;
-    color: var(--cor-fonte-primaria) !important;
+    color: var(--cor-fonte-terciaria) !important;
 }
 
 .nav-link{
@@ -39,13 +40,26 @@ body{
     --bs-emphasis-color-rgb:var(--cor-fonte-primaria);
 }
 
+.cabecalho .title{
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-fonte-terciaria);
+}
+
+.name{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-fonte-terciaria);
+    font-size: xx-large;
+}
+
 #home{
-    background-color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-quintenaria);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 
 .btn{
-    --bs-btn-bg: var(--cor-primaria) !important;
-    --bs-btn-color: var(--cor-fonte-secundaria) !important;
+    --bs-btn-bg: var(--cor-quaternaria) !important;
+    --bs-btn-color: var(--cor-fonte-primaria) !important;
     --bs-btn-border-color: var(--cor-primaria);
     --bs-btn-hover-bg: var(--cor-terciaria);
 
