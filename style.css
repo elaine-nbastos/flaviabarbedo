@@ -89,6 +89,10 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 
 }
 
@@ -97,8 +101,8 @@ body{
 }
 
 #sobreMim{
-    background-image: linear-gradient(to left, transparent 0%, #fff 100%), url(./assets/images/240_F_893849490_LMB3XQKMD8F6DO8KXLqWDeTzfgeYktHN.jpg);
+    background-image: linear-gradient(to right, transparent 0%, #fff 100%), url(./assets/images/tecnica-abstrata-de-tinta-de-alcool-cor-pastel-e-brilhos-dourados_100956-990.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
