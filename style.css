@@ -105,4 +105,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+
+    border-top-left-radius: 10%;
+    border-top-right-radius: 20%;
 }
