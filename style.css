@@ -33,15 +33,32 @@ body{
 
     font-family: var(--fonte-primaria) !important;
     color: var(--cor-fonte-terciaria) !important;
+
+    margin: 0;
+    padding: 0;
 }
 
+
+
 #cabecalho{
-    height: 30px;
+    height: 8rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link{
     color:var(--cor-fonte-primaria);
     --bs-emphasis-color-rgb:var(--cor-fonte-primaria);
+}
+
+.contato{
+    height: 25px;
+    font-size: 12px;
+}
+
+.p{
+    font-size: 8px;
+    font-size: 400;
 }
 
 .cabecalho .title{
@@ -83,7 +100,7 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     opacity: 0.3;
 }
 
@@ -149,11 +166,11 @@ body{
 @media (max-width: 992px){
     
     .xxl{
-        display:none;
+        display:block;
     }
 
     .lg{
-        display: block;
+        display: none;
     }
 }
 
