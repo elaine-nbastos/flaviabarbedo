@@ -11,21 +11,17 @@
     --fonte-quaternaria: "Comic Neue", cursive;
 
     --cor-PlanoDeFundo-light: #e7d7c1;
-    --bs-body-bg: #e7d7c1;
-
-    --bs-body-bg-dark: #006d77;
-
 
     --cor-primaria: #006d77;
     --cor-secundaria: #ffddd2;
     --cor-terciaria: #83c5be;
-    --cor-quaternaria: #e29578;
+    --cor-quaternaria: #ddb7ac;
     --cor-quintenaria: #b9c7ca;
 
     --cor-fonte-primaria: #fff;
     --cor-fonte-secundaria: #000;
     --cor-fonte-terciaria: #006d77;
-    --cor-fonte-quaternaria: #e29578;
+    --cor-fonte-quaternaria: #ddb7ac;
 
 }
 
@@ -38,17 +34,18 @@ body{
     padding: 0;
 }
 
-
-
 #cabecalho{
+    background-color: var(--cor-fonte-terciaria)!important;
     height: 8rem;
     margin: 0;
     padding: 0;
+    width: 2rem;
+
 }
 
-.nav-link{
-    color:var(--cor-fonte-primaria);
-    --bs-emphasis-color-rgb:var(--cor-fonte-primaria);
+
+main{
+    top: 30rem;
 }
 
 .contato{
@@ -100,7 +97,7 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    height: 50%;
+    height: 35rem;
     opacity: 0.3;
 }
 
