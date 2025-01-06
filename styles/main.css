@@ -1,0 +1,19 @@
+.main{
+    margin-top: 10rem;
+    color: var(--cor-fonte-terciaria);
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../assets/images/folha-caindo-com-fundo-desfocado_23-2148232268.jpg) no-repeat;
+}
+
+.home__img{
+    margin: 1rem;
+    width: 50%;
+    height: 30rem;
+}
+
+
+

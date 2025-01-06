@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Prata&display=swap'); 
 
+@import url(./styles/header.css);
+@import url(./styles/footer.css);
+@import url(./styles/main.css);
+
 :root{
 
     --fonte-primaria: "Open Sans", sans-serif;
@@ -16,7 +20,7 @@
     --cor-secundaria: #ffddd2;
     --cor-terciaria: #83c5be;
     --cor-quaternaria: #ddb7ac;
-    --cor-quintenaria: #b9c7ca;
+    --cor-quintenaria: #03989e;
 
     --cor-fonte-primaria: #fff;
     --cor-fonte-secundaria: #000;
@@ -26,148 +30,16 @@
 }
 
 body{
-
-    font-family: var(--fonte-primaria) !important;
-    color: var(--cor-fonte-terciaria) !important;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
 
     margin: 0;
     padding: 0;
+
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:center;
 }
-
-#cabecalho{
-    background-color: var(--cor-fonte-terciaria)!important;
-    height: 8rem;
-    margin: 0;
-    padding: 0;
-    width: 2rem;
-
-}
-
-
-main{
-    top: 30rem;
-}
-
-.contato{
-    height: 25px;
-    font-size: 12px;
-}
-
-.p{
-    font-size: 8px;
-    font-size: 400;
-}
-
-.cabecalho .title{
-    font-family: var(--fonte-quaternaria);
-    color: var(--cor-fonte-terciaria);
-    font-size: 600;
-}
-
-.title{
-    color: var(--cor-fonte-quaternaria);
-    font-size: 700;
-}
-
-.subtitle{
-    font-family: var(--fonte-quaternaria);
-
-}
-
-.strong{
-    font-family: var(--fonte-quaternaria);
-    font-size: 600;
-
-}
-
-.name{
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-fonte-terciaria);
-    font-size: xx-large;
-}
-
-#home{
-    background-color: var(--cor-quintenaria);
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-}
-
-.imgFundo{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 35rem;
-    opacity: 0.3;
-}
-
-.textoHome{
-    position: relative;
-}
-
-
-.btn{
-    --bs-btn-bg: var(--cor-quaternaria) !important;
-    --bs-btn-color: var(--cor-fonte-primaria) !important;
-    --bs-btn-border-color: var(--cor-primaria);
-    --bs-btn-hover-bg: var(--cor-terciaria);
-
-    --bs-btn-hover-border-color: var(--cor-terciaria);
-    --bs-btn-active-bg: var(--cor-secundaria);
-    --bs-btn-active-border-color: var(--cor-primaria);
-    --bs-btn-disabled-bg: var(--cor-terciaria);
-    --bs-btn-disabled-border-color: var(--cor-primaria);
-    font-weight: 600;
-
-}
-
-.bg-img{
-    background-image: linear-gradient(to right, transparent 00%, #fff 100%), url(./assets/images/diversao-em-familia-e-convivencia-aventuras-ao-ar-livre-e-momentos-aconchegantes_984027-255272.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-
-}
-
-#neuro{
-    color: var(--cor-fonte-secundaria);
-}
-
-#sobreMim{
-    background-image: linear-gradient(to right, transparent 0%, #fff 100%), url(./assets/images/tecnica-abstrata-de-tinta-de-alcool-cor-pastel-e-brilhos-dourados_100956-990.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-
-    border-top-left-radius: 10%;
-    border-top-right-radius: 20%;
-}
-
-
-@media (max-width: 280px){
-
-    .lg{
-        display: none;
-    }
-    .xxl{
-        display: block;
-    }
-}
-
-@media (max-width: 992px){
-    
-    .xxl{
-        display:block;
-    }
-
-    .lg{
-        display: none;
-    }
-}
-
