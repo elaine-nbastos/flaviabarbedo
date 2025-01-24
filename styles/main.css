@@ -1,19 +1,24 @@
 .main{
-    margin-top: 10rem;
+    margin-top: 15rem;
     color: var(--cor-fonte-terciaria);
 }
 
 .home{
+    background-color: #f3f0ef;
+}
+
+.img{
     display: flex;
     justify-content: space-around;
-    background-image: url(../assets/images/folha-caindo-com-fundo-desfocado_23-2148232268.jpg) no-repeat;
+    height: 50rem;
+    background-image: url(../assets/images/Imagem\ do\ WhatsApp\ de\ 2025-01-23\ à\(s\)\ 22.39.10_0f7eecc0.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:50rem;
+    align-items: center;
+    text-align: center;
 }
 
-.home__img{
-    margin: 1rem;
-    width: 50%;
-    height: 30rem;
+.home__text{
+
 }
-
-
-
