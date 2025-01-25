@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css">
     <title>Flavia Barbedo</title>
 </head>
@@ -13,29 +14,25 @@
 
     <header id="cabecalho" class="cabecalho">
         <nav class="container">
-            <div class="logo">
-                <img class="logo__img" src="./assets/images/IMG-20240928-WA0014.jpg">    
-            </div>
+            <img class="logo__img" src="./assets/images/IMG-20240928-WA0014.jpg">
 
             <div class="container__menu">
                 <div class="contato__menu">
                     <div class="contato__itens">
-                        <img class="contato__insta__img" src="./assets/images/icons8-telefone-30.png" alt="logo de telefone">
+                        <img class="contato__insta__img" src="./assets/images/icons8-telefone-48.png"
+                            alt="logo de telefone">
                         <p class="">+55 12 98210-7820</p>
                     </div>
                     <div class="contato__itens">
                         <div class="contato__insta__img">
                             <a href="https://www.instagram.com/flaviabarbedo_psi/">
-                                <img class="" src="./assets/images/icons8-instagram-logo.svg" alt="logo do instagran">
+                                <img class="contato__insta__img" src="./assets/images/icons8-instagram.svg"
+                                    alt="logo do instagran">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <button class="button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=""></span>
-                </button>
                 <div class="menu" id="navbarNavDropdown">
                     <ul class="menu__lista">
                         <li class="menu__itens">
@@ -62,10 +59,8 @@
     <main class="main">
 
         <section id="home" class="home">
-            <div id="img" class="img">
             <div class="home__text">
                 <h1 class="home__text_title">Psicóloga e Neuropsicóloga</h1>
-
                 <h4 class="home__text_h4">Terapia Cognitiva - Comportamental</h4>
                 <h6 class="home__text_h6">Adultos e Isosos - Mulheres - Adolescentes - Avaliações Neuropsicológica</h6>
                 <h6 class="home__text_h6">Atendimento Presencial e Online</h6>
@@ -84,12 +79,32 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
 
         <section id="psicologia" class="">
+
             <h5 class="">TERAPIA COGNITIVA COMPORTAMENTAL (TCC)</h5>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
             <div class="">
 
                 <div class="">
@@ -97,6 +112,8 @@
                 </div>
 
                 <div class="">
+
+
 
                     <div class="" id="accordionExample">
                         <div class="">
@@ -385,6 +402,8 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
 
 </body>
 
