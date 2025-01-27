@@ -1,12 +1,13 @@
 .main {
     font-family: var(--fonte-sextenaria);
-    margin-top: 5rem;
+    margin-top: 10rem;
     color: var(--cor-fonte-terciaria);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /*INICIO DA SECTION HOME*/
 .home {
     display: flex;
@@ -18,7 +19,7 @@
     text-align: center;
 }
 
-.home__text{
+.home__text {
     color: var(--cor-fonte-secundaria);
     margin-top: 5rem;
     width: 100%;
@@ -29,19 +30,20 @@
     text-align: center;
 }
 
-.home__text_title{
+.home__text_title {
     font-family: var(--fonte-sextenaria);
     font-size: 3rem;
     color: var(--cor-fonte-terciaria);
     margin: 1rem;
 }
 
-.home__text_h3, .home__text_h2{
+.home__text_h3,
+.home__text_h2 {
     font-weight: 400;
     margin: 0.5rem;
 }
 
-.button{
+.button {
     margin: 2rem;
     background-color: var(--cor-quintenaria);
     color: var(--cor-fonte-primaria);
@@ -50,13 +52,13 @@
     border-radius: 32px;
     padding: 8px;
     cursor: pointer;
-    text-decoration:solid;
-    transition: width 0.5s, height 4s ;
+    text-decoration: solid;
+    transition: width 0.5s, height 4s;
     opacity: 0.8;
 }
 
-.button:hover{
-    width:  14rem;
+.button:hover {
+    width: 14rem;
     height: 2.5rem;
     background-color: var(--cor-primaria);
 }
@@ -65,7 +67,7 @@
 
 /*INICIO DA SECTION PSICOLOGIA*/
 
-.psicologia{
+.psicologia {
     background-color: var(--cor-quintenaria);
     color: var(--cor-fonte-primaria);
     width: 80rem;
@@ -79,11 +81,11 @@
 
 }
 
-.psicologia .home__text_title{
+.psicologia .home__text_title {
     color: var(--cor-fonte-primaria);
 }
 
-.swiper{
+.swiper {
     width: 50rem;
     height: 40rem;
 
@@ -96,30 +98,30 @@
 }
 
 .swiper-pagination {
-    position:initial;
+    position: initial;
     margin: 10px;
 }
 
-.slide{
+.slide {
     display: flex;
     flex-direction: column;
 }
 
-.slide .slide_item{
+.slide .slide_item {
     display: grid;
     grid-template-columns: 40% 40%;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.slide_img{
+.slide_img {
     text-align: left;
     align-items: center;
     align-self: center;
     width: 60rem;
 }
 
-.slide_two{
+.slide_two {
     color: var(--cor-fonte-secundaria);
     background-color: #fff;
 }
@@ -133,18 +135,119 @@
     opacity: 0.8;
 }
 
-.title{
+.title {
     position: relative;
     z-index: 1;
 }
 
-.teste{
+.teste {
     color: var(--cor-fonte-terciaria);
     font-weight: 600;
     position: relative;
     z-index: 1;
 }
 
+/*FIM DA SECTION PSICOLOGIA*/
+
+/*INICIO DA SECTION NEURO*/
+
+.neuro{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+.container_neuro_description{
+    width: 75rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    background-color: var(--cor-secundaria);
+}
+
+.container_indicacao{
+    width: 75rem;
+    background-color: var(--cor-secundaria);
+}
+
+.container_colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/*FIM*/
+
+/*INICIO DA SECTION DEPOIMENTOS*/
+
+.container_depoimentos{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-quintenaria);
+    color: var(--cor-fonte-primaria);
+}
+
+/*FIM*/
+
+/*INICIO DA SECTION SOBREMIM*/
+
+.container_sobreMim{
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px var(--cor-quintenaria);
+    border-radius: 2rem;
+}
+
+.sobreMim_img{
+    border-radius: 10rem;
+}
+
+.img{
+    border-radius: 2rem;
+}
+
+/*FIM*/
+
+/*INICIO DA SECTION CONSULTORIO*/
+
+.container_consultorio{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.consultorio_img{
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/*FIM*/
+
+/*INICIO DA SECTION BLOG*/
+
+.blog{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*FIM*/
 
 
 @media screen and (min-width: 1024px) {
