@@ -21,7 +21,7 @@
 
 .home__text {
     color: var(--cor-fonte-secundaria);
-    margin-top: 5rem;
+    margin-top: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
     font-family: var(--fonte-sextenaria);
     font-size: 3rem;
     color: var(--cor-fonte-terciaria);
-    margin: 1rem;
+    margin: .5rem;
 }
 
 .home__text_h3,
