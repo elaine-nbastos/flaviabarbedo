@@ -1,0 +1,13 @@
+.rodape{
+    width: 100%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--cor-terciaria);
+}
+
+.rodape__texto{
+    margin: 0;
+}
