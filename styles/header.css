@@ -7,13 +7,13 @@
 }
 
 .container{
-    margin: 1rem;
+    margin: 0rem;
     height: 8rem;
     display: grid;
     grid-template-columns: 35% 65%;
-   flex-direction: row;
-   justify-content:space-between;
-   background-color: var(--cor-quintenaria);
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: var(--cor-quintenaria);
 }
 
 .logo__img{

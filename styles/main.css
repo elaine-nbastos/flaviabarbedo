@@ -1,12 +1,17 @@
 .main {
+    font-family: var(--fonte-sextenaria);
     margin-top: 5rem;
     color: var(--cor-fonte-terciaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*INICIO DA SECTION HOME*/
 .home {
     display: flex;
     justify-content: space-between;
-    height: 20rem;
+    height: 30rem;
     width: 100%;
     background-color: var(--cor-secundaria);
     align-items: center;
@@ -14,6 +19,7 @@
 }
 
 .home__text{
+    color: var(--cor-fonte-secundaria);
     margin-top: 5rem;
     width: 100%;
     display: flex;
@@ -24,105 +30,127 @@
 }
 
 .home__text_title{
-    font-family: var(--fonte-quintenaria);
+    font-family: var(--fonte-sextenaria);
     font-size: 3rem;
+    color: var(--cor-fonte-terciaria);
+    margin: 1rem;
+}
+
+.home__text_h3, .home__text_h2{
+    font-weight: 400;
+    margin: 0.5rem;
+}
+
+.button{
+    margin: 2rem;
+    background-color: var(--cor-quintenaria);
+    color: var(--cor-fonte-primaria);
+    width: 12rem;
+    border: 0px;
+    border-radius: 32px;
+    padding: 8px;
+    cursor: pointer;
+    text-decoration:solid;
+    transition: width 0.5s, height 4s ;
+    opacity: 0.8;
+}
+
+.button:hover{
+    width:  14rem;
+    height: 2.5rem;
+    background-color: var(--cor-primaria);
 }
 
 /*FIM DA SECTION HOME*/
 
 /*INICIO DA SECTION PSICOLOGIA*/
-.carrossel__titulo {
-    color: var(--laranja);
-    background-color: var(--cor-secundaria);
+
+.psicologia{
+    background-color: var(--cor-quintenaria);
+    color: var(--cor-fonte-primaria);
+    width: 80rem;
+    height: 40rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 1em 0 0.5em 0;
+
 }
 
-.swiper-slide img {
-    width: 100%;
+.psicologia .home__text_title{
+    color: var(--cor-fonte-primaria);
+}
+
+.swiper{
+    width: 50rem;
+    height: 40rem;
+
 }
 
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
+    top: 4rem;
 }
 
 .swiper-pagination {
-    position: initial;
-    margin: .5em 0;
+    position:initial;
+    margin: 10px;
 }
 
-.card__descricao {
+.slide{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5em;
+    flex-direction: column;
 }
 
-.card__botoes {
-    display: flex;
-    justify-content: space-between;
+.slide .slide_item{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
-.botoes {
-    display: flex;
+.slide_img{
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    width: 60rem;
 }
 
-.card {
-    background: var(--cor-secundaria);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
+.slide_two{
+    color: var(--cor-fonte-secundaria);
+    background-color: #fff;
 }
 
-.descricao__titulo {
-    color: var(--laranja);
-    font-weight: 700;
+.imgFundo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    opacity: 0.8;
 }
 
-.descricao__titulo-livro {
+.title{
+    position: relative;
+    z-index: 1;
+}
+
+.teste{
     color: var(--cor-fonte-terciaria);
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0.5em 0;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
 }
 
-.descricao__texto {
-    font-size: 14px;
-}
-
-.botoes__item {
-    margin: 0 0.5em;
-}
-
-.botoes__ancora {
-    background-color: var(--cor-secundaria);
-    padding: 1em 2.2em;
-    color: var(--cor-fonte-terciaria);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.descricao__estrela {
-    margin-bottom: 0.5em;
-}
 
 
 @media screen and (min-width: 1024px) {
 
-    .carrossel__titulo {
-        font-size: 26px;
-    }
-
     .swiper-pagination {
         margin: 2em 0 3em 0;
-    }
-
-    .swiper {
-        width: 60%;
     }
 
     .swiper-button-prev,
@@ -131,43 +159,11 @@
         top: 60%
     }
 
-    .card {
-        width: 40%;
-        margin: 2em auto;
-    }
-
 }
 
 @media screen and (min-width: 1724px) {
 
-    .carrossel__container {
-        display: flex;
-        margin: 0 20vw 0 20vw;
-        align-items: center;
-    }
-
     .swiper-pagination {
         margin: 1em 0;
-    }
-
-    .swiper {
-        width: 50%;
-    }
-
-    .descricao__titulo {
-        font-size: 32px;
-    }
-
-    .descricao__texto {
-        font-size: 16px;
-    }
-
-    .descricao {
-        margin-right: 2em;
-    }
-
-    .card {
-        width: 60%;
-        margin-left: 3em;
     }
 }
