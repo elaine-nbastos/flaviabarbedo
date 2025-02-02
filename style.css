@@ -37,7 +37,7 @@
 body{
     font-family: var(--fonte-quaternaria);
     color: var(--cor-fonte-primaria);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 
     margin: 0;

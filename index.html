@@ -14,8 +14,9 @@
 
     <header id="cabecalho" class="cabecalho">
         <nav class="container">
-            <img class="logo__img" src="./assets/images/IMG-20240928-WA0014.jpg">
-
+            <div class="container_logo">
+                <img class="logo__img" src="./assets/images/IMG-20240928-WA0014.jpg">
+            </div>
             <div class="container__menu">
                 <div class="contato__menu">
                     <div class="contato__itens">
@@ -33,8 +34,12 @@
                     </div>
                 </div>
 
-                <div class="menu" id="navbarNavDropdown">
-                    <ul class="menu__lista">
+                <div class="menu" id="">
+                   <button id="hamburger-button" class="hamburger-button" aria-label="menu hamburger" aria-controls="menu" aria-expanded="true">
+                    <span class="icon"></span>Menu
+                   </button>
+                   
+                    <ul id="menu" class="menu__lista" aria-hidden="false">
                         <li class="menu__itens">
                             <a class="menu_item" aria-current="page" href="#">HOME</a>
                         </li>
@@ -371,7 +376,7 @@
 
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape__texto">
         <p class="rodape__texto">Criado por Elaine Bastos. Todos os direitos reservados.</p>
         <p class="rodape__texto">12-98317-1565</p>
 
