@@ -1,4 +1,4 @@
-
+/*
 const btnMenu = document.getElementById("hamburger-button");
 const menu = document.getElementById("menu")
 
@@ -20,3 +20,5 @@ btnMenu.addEventListener("click", function(){
   this.setAttribute("aria-expanded", !expanded)
   menu.setAttribute("aria-hidden", expanded)
 })
+
+*/

@@ -1,4 +1,4 @@
-.cabecalho{
+.cabecalho {
     width: 100%;
     height: 1rem;
     position: fixed;
@@ -6,18 +6,18 @@
     font-weight: 400;
 }
 
-.container{
+.container {
     margin: 0rem;
     height: 8rem;
     width: 100%;
     display: grid;
     grid-template-columns: 35% 65%;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: var(--cor-quintenaria);
 }
 
-.container_logo{
+.container_logo {
     width: 50%;
     height: 100%;
     display: flex;
@@ -27,11 +27,11 @@
     align-self: center;
 }
 
-.logo__img{
+.logo__img {
     display: flex;
     justify-content: space-between;
     height: auto;
-    max-width:min-content;
+    max-width: min-content;
     width: 100%;
 
     margin-left: 5rem;
@@ -39,7 +39,7 @@
     margin-bottom: 1rem;
 }
 
-.contato__menu{
+.contato__menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,18 +47,20 @@
     height: 3rem;
 }
 
-.contato__itens{
+.contato__itens {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 15rem;
     height: 2rem;
 }
-.contato__insta__img{
+
+.contato__insta__img {
     width: 2rem;
     height: 2rem;
 }
-.menu{
+
+.menu {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -67,27 +69,28 @@
 
 }
 
-.container__menu{
+.container__menu {
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding: 0;
     height: 8rem;
 }
 
-.menu__lista{
+.menu__lista {
     display: flex;
     flex-direction: row;
 
 }
 
-.hamburger-button .icon{
-    display: inline-block;
+.hamburger-button {
+    display: none;
     width: 30px;
     text-align: center;
+    cursor: pointer;
 }
-/*
+
 .hamburger-button[aria-expanded="false"].icon::before{
     content: "\2630";
 }
@@ -95,8 +98,8 @@
 .hamburger-button[aria-expanded="true"].icon::before{
     content: "\2715";
 }
-*/    
-.hamburger-button-js-enabled .menu__lista{
+
+.hamburger-button-js-enabled .menu__lista {
     display: flex;
     position: absolute;
     width: calc(100% - 30px);
@@ -105,7 +108,7 @@
     flex-direction: column;
 }
 
-.hamburger-button-js-enabled .menu-closed{
+.hamburger-button-js-enabled .menu-closed {
     display: none;
 }
 
@@ -120,63 +123,79 @@
     background-color: #5555;
 }
 
-
-.hamburger-button .icon{
+.icon {
     display: none;
     background: none;
     border: none;
     color: white;
     font-size: 24px;
     padding: 14px;
-    cursor: pointer;
 }
 
-.hamburger-button-js-enabled{
+.hamburger-button-js-enabled {
     display: block;
 }
 
+@media (max-width: 1200px){
+    .container{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
 @media (max-width: 768px) {
 
-    .container{
-        grid-template-columns: 70% 30%;
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
     }
 
-    .container_logo{
-        width: 90%;
-        height: 50%;
+    .container {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container_logo {
+        max-width: max-content;
+        max-height: max-content;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
         align-items: center;
         align-self: center;
     }
 
-    .logo__img{
+    .logo__img {
         height: auto;
-        max-width:max-content;
-        width: 85%;
+        max-width: auto;
+        display: flex;
+        justify-content: center;
         margin-left: 0;
         margin-top: 0rem;
         margin-bottom: 0.5rem;
     }
-    
-    .hamburger-button{
+
+    .hamburger-button {
         display: flex;
     }
 
-    .menu__lista{
+    .menu__lista {
         display: none;
         padding: 0;
         gap: 0;
         flex-direction: column;
-    
+
     }
 
-    .menu__itens{
+    .menu__itens {
         padding: 0.3rem;
     }
-    
-    .contato__menu{
+
+    .contato__menu {
         display: none;
     }
 }
