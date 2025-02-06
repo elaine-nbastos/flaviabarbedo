@@ -20,6 +20,8 @@
     background-color: var(--cor-secundaria);
     align-items: center;
     text-align: center;
+    align-content: center;
+    align-self: center;
 }
 
 .home__text {
@@ -257,7 +259,7 @@
 @media (max-width: 1024px) {
 
     .home{
-        
+        margin-left: 8rem;
     }
 
     .swiper-pagination {
