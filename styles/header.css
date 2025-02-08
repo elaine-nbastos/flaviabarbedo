@@ -127,6 +127,10 @@
 }
 
 @media (max-width: 1024px) {
+
+    .cabecalho{
+        width: 100%;
+    }
     .container {
         width: 100%;
         height: 6rem;
@@ -134,10 +138,10 @@
     }
 
     .container_logo {
-        max-width: 100%;
+        width: max-content;
         display: flex;
         justify-content: center;
-        margin-left: 0;
+        margin-left: 1rem;
     }
 
     .container__menu {
@@ -147,22 +151,24 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 724px) {
 
     .cabecalho {
         display: flex;
         margin: 0;
-        height: 5rem;
+        height: max-content;
         width: 100%;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
     }
 
     .container {
         width: 100%;
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 0;
-        margin: 0;
-        padding: 0;
+        grid-template-columns: 2fr 1fr;
         text-align: center;
         align-items: center;
         align-self: center;
@@ -172,7 +178,7 @@
         max-width: max-content;
         max-height: max-content;
         display: flex;
-        margin-left: 7rem;
+        margin-left: 5rem;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -202,5 +208,18 @@
 
     .contato__menu {
         display: none;
+    }
+}
+
+@media(max-width:500px){
+    .cabecalho {
+        display: flex;
+        width: max-content;
+    }
+
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template: 1fr 1fr;
     }
 }

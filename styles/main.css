@@ -13,14 +13,13 @@
 
 /*INICIO DA SECTION HOME*/
 .home {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
     width: 100%;
     background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    align-content: center;
     align-self: center;
 }
 
@@ -156,14 +155,14 @@
 }
 
 .container_neuro_description {
-    width: 75rem;
+    width: 100%;
     margin-top: 1rem;
     margin-bottom: 5rem;
     background-color: var(--cor-secundaria);
 }
 
 .container_indicacao {
-    width: 75rem;
+    width: 100%;
     background-color: var(--cor-secundaria);
 }
 
@@ -228,7 +227,7 @@
 }
 
 .consultorio_img {
-    width: 50rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
