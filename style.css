@@ -48,3 +48,10 @@ body{
     flex-direction: column;
     align-items:center;
 }
+
+@media (max-width: 1024px){
+    body{
+        font-size: 0.75rem;
+    }
+    
+}
