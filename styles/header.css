@@ -137,7 +137,7 @@
         max-width: 100%;
         display: flex;
         justify-content: center;
-        margin-left: 5rem;
+        margin-left: 0;
     }
 
     .container__menu {
