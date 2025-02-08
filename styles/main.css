@@ -14,7 +14,7 @@
 /*INICIO DA SECTION HOME*/
 .home {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: auto;
     width: 100%;
     background-color: var(--cor-secundaria);
@@ -144,7 +144,7 @@
 
 /*INICIO DA SECTION NEURO*/
 
-.neuro{
+.neuro {
     margin-top: 5rem;
     width: 100%;
     display: flex;
@@ -155,19 +155,19 @@
     align-self: center;
 }
 
-.container_neuro_description{
+.container_neuro_description {
     width: 75rem;
     margin-top: 1rem;
     margin-bottom: 5rem;
     background-color: var(--cor-secundaria);
 }
 
-.container_indicacao{
+.container_indicacao {
     width: 75rem;
     background-color: var(--cor-secundaria);
 }
 
-.container_colunas{
+.container_colunas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -178,7 +178,7 @@
 
 /*INICIO DA SECTION DEPOIMENTOS*/
 
-.container_depoimentos{
+.container_depoimentos {
     margin-top: 5rem;
     width: 100%;
     display: flex;
@@ -193,7 +193,7 @@
 
 /*INICIO DA SECTION SOBREMIM*/
 
-.container_sobreMim{
+.container_sobreMim {
     margin-top: 5rem;
     padding: 2rem;
     width: 100%;
@@ -207,11 +207,11 @@
     align-self: center;
 }
 
-.sobreMim_img{
+.sobreMim_img {
     border-radius: 10rem;
 }
 
-.sobreMim_img .img{
+.sobreMim_img .img {
     width: 50%;
     border-radius: 2rem;
 }
@@ -220,14 +220,14 @@
 
 /*INICIO DA SECTION CONSULTORIO*/
 
-.container_consultorio{
+.container_consultorio {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.consultorio_img{
+.consultorio_img {
     width: 50rem;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -235,7 +235,7 @@
     padding: 0;
 }
 
-.carousel-item .img{
+.carousel-item .img {
     width: 100%;
 }
 
@@ -243,7 +243,7 @@
 
 /*INICIO DA SECTION BLOG*/
 
-.blog{
+.blog {
     background-color: var(--cor-secundaria);
     width: 100%;
     display: flex;
@@ -253,13 +253,15 @@
 
 /*FIM*/
 
-
-
-
 @media (max-width: 1024px) {
 
-    .home{
-        margin-left: 8rem;
+    .main{
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    .home {
+        margin: 0;
     }
 
     .swiper-pagination {
