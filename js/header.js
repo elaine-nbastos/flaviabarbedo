@@ -1,24 +1,16 @@
-/*
-const btnMenu = document.getElementById("hamburger-button");
-const menu = document.getElementById("menu")
+const hamburgerButton = document.getElementById('hamburger-button');
+const menuLista = document.getElementById('menu__lista');
 
-btnMenu.classList.add("hamburger-button-js-enabled");
-btnMenu.setAttribute("aria-expanded", "false");
-menu.setAttribute("aria-hidden", "true");
+// Adicionando o evento de clique no botão de hambúrguer
+hamburgerButton.addEventListener('click', function() {
+    // Verificando o estado atual do menu (aberto ou fechado)
+    const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
+    
+    // Alternando o estado do menu
+    hamburgerButton.setAttribute('aria-expanded', !isExpanded);
+    menuLista.setAttribute('aria-hidden', isExpanded);
+    
+    // Alternando a visibilidade do menu
+    menuLista.style.display = isExpanded ? 'none' : 'block';
+});
 
-btnMenu.addEventListener("click", function(){
-
-  let expanded = this.getAttribute("aria-expanded") === "true" ? true : false;
-
-
-  if(expanded){
-    menu.classList.add("menu-closed")
-  }else{
-    menu.classList.remove("menu-closed")
-  };
-
-  this.setAttribute("aria-expanded", !expanded)
-  menu.setAttribute("aria-hidden", expanded)
-})
-
-*/
