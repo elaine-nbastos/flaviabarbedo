@@ -117,12 +117,16 @@
 }
 
 .menu_item:hover{
-    color: var(--cor-fonte-quaternaria);
+    color: var(--cor-fonte-terciaria);
+}
+
+.menu_item:visited{
+    color: var(--cor-fonte-primaria);
 }
 
 .menu__itens:hover,
 .menu__itens:focus {
-    background-color: #5555;
+    background-color: var(--cor-fonte-quaternaria);
     border: 1px;
     border-radius: 32px;
 }
