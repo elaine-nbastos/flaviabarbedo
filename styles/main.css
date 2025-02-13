@@ -176,6 +176,7 @@
 .neuro {
     margin-top: 5rem;
     width: 100%;
+    background-color: var(--cor-secundaria);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,9 +219,21 @@
     width: 100%;
     height: 50rem;
 }
+.neuro_img{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 #neuro .swiper {
     width: 50%;
     height: 30rem;
+    background-color: #fff;
+    margin: .5rem;
+    padding: 2rem;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 32px;
 }
 
 #neuro .swiper-pagination {
