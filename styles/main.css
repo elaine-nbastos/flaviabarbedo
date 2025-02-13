@@ -212,6 +212,49 @@
     text-align: justify;
 }
 
+.container_neuto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50rem;
+}
+#neuro .swiper {
+    width: 50%;
+    height: 30rem;
+}
+
+#neuro .swiper-pagination {
+    position: initial;
+    margin: 10px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.slide_img {
+    width: 80%;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+}
+
+ p{
+    text-align: justify;
+}
+
+.img{
+    width: 100%;
+    border-radius: 32px;
+}
+
 /*FIM*/
 
 /*INICIO DA SECTION DEPOIMENTOS*/
@@ -329,7 +372,8 @@
     .swiper-button-prev,
     .swiper-button-next {
         display: block;
-        top: 60%
+        top: 40%;
+        color:var(--cor-secundaria)
     }
     
 }
