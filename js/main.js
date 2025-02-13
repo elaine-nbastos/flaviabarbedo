@@ -1,9 +1,9 @@
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  /*autoplay:{
+  autoplay:{
     depay:5000,
-  },*/  
+  },  
   speed:10,
   direction: 'horizontal',
   loop: true,
