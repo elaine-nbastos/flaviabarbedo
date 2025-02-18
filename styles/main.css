@@ -429,6 +429,16 @@
 }
 
 @media (max-width: 480px){
+    .home {
+        background-color: var(--cor-secundaria);
+        background-image: none;
+        margin: 0;
+    }
+
+    .home__text{
+        margin: 0;
+    }
+    
     .home_tcc{
         width: 70%;
         display: flex;
