@@ -5,6 +5,8 @@
     display: flex;
     font-size: 1rem;
     font-weight: 400;
+    z-index: 2;
+
 }
 
 .container {
@@ -13,7 +15,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr ;
-    background-color: var(--cor-quintenaria);
+    background-image: linear-gradient(to right, var(--cor-quintenaria) 50%, var(--cor-primaria));
 }
 
 .container_logo {

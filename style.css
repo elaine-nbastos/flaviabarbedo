@@ -22,21 +22,23 @@
     --cor-PlanoDeFundo-light: #e7d7c1;
 
     --cor-primaria: #006d77;
-    --cor-secundaria: #ffddd2;
+    --cor-secundaria: #edf6f9;
     --cor-terciaria: #83c5be;
     --cor-quaternaria: #ddb7ac;
     --cor-quintenaria: #03989e;
 
-    --cor-fonte-primaria: #fff;
+    --cor-fonte-primaria: #edf6f9;
     --cor-fonte-secundaria: #000;
     --cor-fonte-terciaria: #006d77;
     --cor-fonte-quaternaria: #ddb7ac;
+    --cor-fonte-quintenaria: #e29578;
 
 }
 
 body{
     font-family: var(--fonte-quaternaria);
     color: var(--cor-fonte-primaria);
+    background-color: var(--cor-secundaria);
     font-size: 1rem;
     font-weight: 400;
 

@@ -15,8 +15,8 @@
 .home {
     width: 100%;
     height: 30rem;
-    background-color: var(--cor-secundaria);
-    background-image: url(../assets/images/Imagem\ do\ WhatsApp\ de\ 2024-10-03\ à\(s\)\ 15.14.56_5a614561.jpg);
+    background-image: linear-gradient(to right, transparent 0%, var(--cor-secundaria) 50%), url(../assets/images/home-capa.jpg) ;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,12 +28,14 @@
 .home__text {
     color: var(--cor-fonte-secundaria);
     margin-top: 0.5rem;
+    margin-left: 40rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    align-self: center;
 }
 
 .home__text_title {
@@ -51,10 +53,10 @@
 
 .button {
     margin: 2rem;
-    background-color: var(--cor-quintenaria);
-    color: var(--cor-fonte-primaria);
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-fonte-secundaria);
     width: 12rem;
-    border: 0px;
+    border: 1px solid #000;
     border-radius: 32px;
     padding: 8px;
     cursor: pointer;
@@ -66,7 +68,8 @@
 .button:hover {
     width: 14rem;
     height: 2.5rem;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-quaternaria);
+    text-transform: uppercase;
 }
 
 /*FIM DA SECTION HOME*/
@@ -75,7 +78,6 @@
 
 .psicologia {
     background-color: var(--cor-quintenaria);
- 
     color: var(--cor-fonte-primaria);
     width: 100%;
     height: 70rem;
