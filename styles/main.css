@@ -15,14 +15,16 @@
 .home {
     width: 100%;
     height: 30rem;
-    background-image: linear-gradient(to right, transparent 50%, var(--cor-secundaria) 70%), url(../assets/images/home-capa.jpg) ;
+    background-image: linear-gradient(to right , transparent 30%, var(--cor-secundaria) 50%), url(../assets/images/home-capa.jpg) ;
     background-repeat: no-repeat;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     align-self: center;
+
 }
 
 .home_img_2 span{
@@ -117,8 +119,8 @@
     border-radius: 10px;
     transition: all .3s;
     z-index:1;
-    opacity: 0.5;
-    background-color: var(--cor-quaternaria);
+    opacity: 0.4;
+    background-color: var(--cor-fonte-quintenaria);
 }
 
 .button:hover::after {
@@ -143,6 +145,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    
 }
 
 .home_tcc {
@@ -150,43 +153,32 @@
     width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    padding: 1rem;
+    gap: 2rem;
+    padding: 0;
 }
 
 .home_itens {
-    background-color: #fff;
+    border-color: var(--cor-secundaria);
     border-radius: 1.5rem;
-    padding: 0, 5rem;
+    padding: 0.5rem;
 
 }
 
-.criacao {
+.home_item {
+    width: 100%;
     height: max-content;
     flex-direction: column;
-    margin: 8px;
+    margin: 0;
     border-radius: 1.5rem;
-    border: #514f4f dashed 1px;
-    padding: 2rem;
+    border: #514f4f dashed 2px;
+    padding: .5rem;
 }
 
-.criacao .title {
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: #514f4f;
-}
-
-.funcionamento {
-    margin: 8px;
-    border: #514f4f dashed 1px;
-    border-radius: 1.5rem;
-    padding: 2rem;
-}
-
-.funcionamento .title {
+.home_item .title {
     text-decoration: underline;
     text-transform: uppercase;
     color: var(--cor-fonte-secundaria);
+    border-radius: 1.5rem;
 }
 
 .psicologia .home__text_title {
@@ -242,8 +234,8 @@ p {
     background-color: var(--cor-quaternaria);
     color: var(--cor-fonte-quintenaria);
     cursor: pointer;
-    padding: 18px;
-    width: 70%;
+    padding: 1rem;
+    width: 90%;
     text-align: left;
     border: none;
     outline: none;
@@ -251,7 +243,8 @@ p {
   }
   
   .active, .accordion:hover {
-    background-color: var(--cor-fonte-quintenaria);
+    opacity: 0.9;
+    letter-spacing: 2PX;
   }
 
   .panel {
@@ -282,57 +275,37 @@ p {
 .neuro {
     margin-top: 5rem;
     width: 100%;
+    height: 70rem;
     background-color: var(--cor-secundaria);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     align-self: center;
 }
 
-.container_neuro_description {
+.neuro_itens{
     width: 100%;
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: var(--cor-secundaria);
-}
-
-.container_neuro_description p {
-    padding: 0 5rem;
-}
-
-.container_indicacao {
-    width: 100%;
-    background-color: var(--cor-secundaria);
-    padding: 1rem;
-}
-
-.container_indicacao p {
-    justify-content: center;
-    text-align: center;
-}
-
-.container_colunas {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    text-align: justify;
-}
-
-.container_neuto {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 50rem;
+    justify-content: center;
 }
 
 .neuro_img {
-    width: 20%;
-    height: auto;
+    width: 50%;
+    height: 30rem;
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.neuro_itens .img{
+    max-height: 30rem;
+    width: auto;
+
 }
 
 #neuro .swiper {
@@ -373,7 +346,8 @@ p {
 }
 
 .img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 32px;
 }
 
