@@ -15,7 +15,7 @@
 .home {
     width: 100%;
     height: 30rem;
-    background-image: linear-gradient(to right , transparent 30%, var(--cor-secundaria) 50%), url(../assets/images/home-capa.jpg) ;
+    background-image: linear-gradient(to right , transparent 10%, var(--cor-secundaria) 40%), url(../assets/images/home-capa.jpg) ;
     background-repeat: no-repeat;
     margin-bottom: 0;
     display: flex;
@@ -27,6 +27,9 @@
 
 }
 
+.home_img_capa{
+    display: none;
+}
 .home_img_2 span{
     height: 30rem;
 }
@@ -36,6 +39,7 @@
     margin-top: 0.5rem;
     width: 50%;
     margin-left: 50%;
+    margin-right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,7 +309,6 @@ p {
 .neuro_itens .img{
     max-height: 30rem;
     width: auto;
-
 }
 
 #neuro .swiper {
@@ -459,6 +462,11 @@ p {
 
     .home {
         margin: 0;
+        height: 35rem;
+    }
+
+    .home__text{
+        height: auto;
     }
 
     .swiper-pagination {
@@ -472,10 +480,50 @@ p {
         color: var(--cor-secundaria)
     }
 
+    /*Inicio de NEURO*/
+
+    .neuro{
+        height: auto;
+    }
+
 }
 
 @media (max-width: 724px) {
 
+   /*inicio da responsividade para HOME*/
+
+   .home {
+    width: 100%;
+    height: 50rem;
+    background-image: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+.home_img_capa{
+    display:contents;
+
+    content: "";
+    height: fit-content;
+    display: block;
+}
+
+.img_capa{
+    content: "";
+    height: fit-content;
+    width: 100%;
+}
+
+
+   /*FIM HOME*/
+
+
+   /*inicio da responsividade para PSICOLOGIA*/
     .psicologia {
         height: min-content;
     }
@@ -497,11 +545,35 @@ p {
 
 }
 
+
+
+/*FIM PSICOLOGIA*/
+
+/*inicio da responsividade para NEURO*/
+
+.neuro_img{
+    display: none;
+}
+
+
+
+/*FIM NEURO*/
+
 @media (max-width: 480px) {
     .home {
+        height: 65rem;
+        justify-content: center;
         background-color: var(--cor-secundaria);
         background-image: none;
         margin: 0;
+    }
+    .home_img_capa{
+        height: 30rem;
+    }
+
+    .img_capa{
+        height: 100%;
+        width: auto;
     }
 
     .home__text {
@@ -515,5 +587,19 @@ p {
         gap: 1rem;
         padding: 1rem;
         border-radius: 1.5rem;
+    }
+    /*inicio de NEURO*/
+
+    .neuro{
+        height: auto;
+        margin-top:1rem;
+    }
+
+    .neuro_img{
+        display: none;
+    }
+    
+    .slide_img .img{
+        width: 100%;
     }
 }
