@@ -66,6 +66,8 @@
 }
 
 .menu {
+
+
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -167,6 +169,11 @@
     .container__menu {
         margin-right: 5rem;
         max-height: 6rem;
+    }
+
+    .menu{
+        background-color: var(--cor-primaria);
+        margin-top: 4rem;
     }
 }
 
